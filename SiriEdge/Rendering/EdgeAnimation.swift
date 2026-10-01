@@ -105,6 +105,7 @@ public final class EdgeAnimation {
     private var fadeStartAlpha: Float = 0.0
     
     public var cornerRadius: Float = 14.0
+    private var lastRenderLogTime: Double = 0.0
     
     // Cached render parameters from EdgeSettings
     public struct Config {
@@ -195,18 +196,23 @@ public final class EdgeAnimation {
         var beatPulse: Float = 0.0
         var bassLevel: Float = 0.0
         
-        if config.isMusicModeEnabled {
+        let isMusicEnabled = config.isMusicModeEnabled || EdgeSettings.shared.isMusicModeEnabled
+        if isMusicEnabled {
             let snap = MusicReactiveState.shared.getSnapshot()
             if snap.isAudioActive {
                 audioLevel = snap.audioLevel
                 beatPulse = snap.beatPulse
                 bassLevel = snap.bassLevel
             }
+            if now - lastRenderLogTime >= 1.0 {
+                lastRenderLogTime = now
+                print(String(format: "[RENDER] musicLevel = %.3f, beatAmount = %.3f", audioLevel, beatPulse))
+            }
         }
         
         // Base pulse speed: modulated subtly by music energy and beat transients
         let speedBoost: Float
-        if config.isMusicModeEnabled && (audioLevel > 0.001 || beatPulse > 0.001) {
+        if isMusicEnabled && (audioLevel > 0.001 || beatPulse > 0.001) {
             let isDynamic = (config.musicAnimationStyle == .dynamic)
             let levelEffect = isDynamic ? (audioLevel * 0.14) : (audioLevel * 0.07)
             let beatEffect = isDynamic ? (beatPulse * 0.22) : (beatPulse * 0.12)

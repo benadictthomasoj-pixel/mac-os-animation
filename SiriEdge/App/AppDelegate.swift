@@ -159,19 +159,24 @@ public final class AppDelegate: NSObject, NSApplicationDelegate {
         case .forceOff:
             // MANUAL OFF: Always OFF
             invalidateManualTimeout()
+            print("[POWER] overlay command = HIDE (Manual OFF)")
             overlayManager.hide(animated: animated)
             
         case .forceOn:
             // MANUAL ON: Always ON (with 5-minute timeout)
+            print("[POWER] overlay command = SHOW (Manual ON)")
             overlayManager.show(animated: animated)
             startManualTimeout()
             
         case .auto:
             // AUTO: Follows Charger State ONLY
             invalidateManualTimeout()
+            print("[POWER] auto visibility = \(isCharger ? "ON" : "OFF")")
             if isCharger {
+                print("[POWER] overlay command = SHOW")
                 overlayManager.show(animated: animated)
             } else {
+                print("[POWER] overlay command = HIDE")
                 overlayManager.hide(animated: animated)
             }
         }
@@ -180,6 +185,7 @@ public final class AppDelegate: NSObject, NSApplicationDelegate {
         
         // Manage background system audio capture strictly based on overlay visibility and Music Mode setting
         if overlayManager.isVisible && settings.isMusicModeEnabled {
+            print("[AUDIO] Music Mode = ON")
             SystemAudioMonitor.shared.startMonitoring()
         } else {
             SystemAudioMonitor.shared.stopMonitoring()

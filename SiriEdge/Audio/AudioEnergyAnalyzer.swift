@@ -23,13 +23,17 @@ public final class AudioEnergyAnalyzer {
     private var smoothedHigh: Float = 0.0
     
     // Adaptive noise floor & dynamic threshold
-    private var adaptiveNoiseFloor: Float = 0.003
+    private var adaptiveNoiseFloor: Float = 0.001
     
     // Hysteresis timing registers
     private var timeAboveActivation: Double = 0.0
     private var timeBelowDeactivation: Double = 0.0
     private var isAudioActiveState: Bool = false
     private var lastProcessTimestamp: Double = 0.0
+    
+    // Debug logging throttles
+    private var lastLogTimestamp: Double = 0.0
+    private var lastBeatLogTimestamp: Double = 0.0
     
     // Spectral filter states (1-pole IIR filters for zero CPU overhead)
     private var bassFilterState: Float = 0.0
@@ -74,25 +78,23 @@ public final class AudioEnergyAnalyzer {
         
         // 2. Adaptive Noise Floor Tracking
         if rms < adaptiveNoiseFloor {
-            adaptiveNoiseFloor = adaptiveNoiseFloor * 0.95 + rms * 0.05
+            adaptiveNoiseFloor = adaptiveNoiseFloor * 0.90 + rms * 0.10
         } else {
             adaptiveNoiseFloor = adaptiveNoiseFloor * 0.999 + rms * 0.001
         }
-        adaptiveNoiseFloor = max(0.001, min(0.025, adaptiveNoiseFloor))
+        adaptiveNoiseFloor = max(0.0002, min(0.015, adaptiveNoiseFloor))
         
         // Effective musical energy above noise floor
         let effectiveEnergy = max(0.0, rms - adaptiveNoiseFloor)
         
-        // 3. Hysteresis Audio Activity Gate
-        // Activation: Energy above 0.004 for > 60ms
-        // Deactivation: Energy below 0.002 for > 700ms of continuous silence
-        let activationThreshold: Float = 0.004
-        let deactivationThreshold: Float = 0.002
+        // 3. Dynamic Hysteresis Audio Activity Gate
+        let activationThreshold = max(0.0020, adaptiveNoiseFloor * 1.5)
+        let deactivationThreshold = max(0.0010, adaptiveNoiseFloor * 1.1)
         
         if effectiveEnergy > activationThreshold {
             timeAboveActivation += dt
             timeBelowDeactivation = 0.0
-            if timeAboveActivation >= 0.060 {
+            if timeAboveActivation >= 0.040 {
                 isAudioActiveState = true
             }
         } else if effectiveEnergy < deactivationThreshold {
@@ -161,6 +163,20 @@ public final class AudioEnergyAnalyzer {
             highLevel: isAudioActiveState ? smoothedHigh : 0.0,
             isAudioActive: isAudioActiveState
         )
+        
+        // 8. Throttled DEBUG logging (~once per second)
+        if now - lastLogTimestamp >= 1.0 {
+            lastLogTimestamp = now
+            let stateStr = (!isAudioActiveState) ? "IDLE" : ((beatPulse > 0.25) ? "BEAT" : "ACTIVE")
+            print(String(format: "[AUDIO] buffer received | RMS = %.4f | noiseFloor = %.4f | threshold = %.4f | active = %@",
+                         rms, adaptiveNoiseFloor, activationThreshold, isAudioActiveState ? "true" : "false"))
+            print("[MUSIC] state = \(stateStr)")
+        }
+        
+        if beatPulse > 0.35 && (now - lastBeatLogTimestamp >= 0.18) {
+            lastBeatLogTimestamp = now
+            print(String(format: "[BEAT] detected (impulse = %.2f)", beatPulse))
+        }
     }
     
     /// Clears filter registers on stream stop

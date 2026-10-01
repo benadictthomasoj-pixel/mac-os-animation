@@ -6,6 +6,7 @@ import AppKit
 public struct SettingsView: View {
     @ObservedObject var settings = EdgeSettings.shared
     @ObservedObject var power = PowerSource.shared
+    @ObservedObject var music = MusicReactiveState.shared
     
     public init() {}
     
@@ -184,6 +185,22 @@ public struct SettingsView: View {
                                     .pickerStyle(.segmented)
                                     .frame(width: 160)
                                 }
+                                
+                                Divider()
+                                
+                                HStack {
+                                    Text("System Audio Capture")
+                                        .font(.system(size: 12))
+                                    Spacer()
+                                    HStack(spacing: 5) {
+                                        Circle()
+                                            .fill(hasScreenCapturePermission ? Color.green : Color.orange)
+                                            .frame(width: 7, height: 7)
+                                        Text(hasScreenCapturePermission ? "Available" : "Permission Required")
+                                            .font(.system(size: 11, weight: .medium))
+                                            .foregroundColor(hasScreenCapturePermission ? .secondary : .orange)
+                                    }
+                                }
                             }
                         }
                     }
@@ -297,6 +314,10 @@ public struct SettingsView: View {
     
     // MARK: - Helpers
     
+    private var hasScreenCapturePermission: Bool {
+        CGPreflightScreenCaptureAccess()
+    }
+    
     private var isGlowActive: Bool {
         switch settings.controlMode {
         case .forceOff: return false
@@ -305,14 +326,35 @@ public struct SettingsView: View {
         }
     }
     
+    private var runtimeState: String {
+        if !isGlowActive {
+            return "IDLE"
+        }
+        if settings.isMusicModeEnabled && music.isAudioActive {
+            if music.beatPulse > 0.22 {
+                return "BEAT"
+            }
+            return "ACTIVE"
+        }
+        return "ACTIVE"
+    }
+    
+    private var statusColor: Color {
+        switch runtimeState {
+        case "BEAT": return Color.purple
+        case "ACTIVE": return Color.green
+        default: return Color.secondary
+        }
+    }
+    
     private var statusBadge: some View {
         HStack(spacing: 5) {
             Circle()
-                .fill(isGlowActive ? Color.green : Color.secondary)
+                .fill(statusColor)
                 .frame(width: 8, height: 8)
-            Text(isGlowActive ? "ACTIVE" : "IDLE")
+            Text(runtimeState)
                 .font(.system(size: 10, weight: .bold))
-                .foregroundColor(isGlowActive ? .green : .secondary)
+                .foregroundColor(statusColor)
         }
         .padding(.horizontal, 8)
         .padding(.vertical, 4)

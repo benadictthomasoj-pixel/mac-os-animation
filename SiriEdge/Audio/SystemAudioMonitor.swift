@@ -30,22 +30,26 @@ public final class SystemAudioMonitor: NSObject, SCStreamOutput, SCStreamDelegat
         guard !isMonitoring, !isStarting else { return }
         
         guard CGPreflightScreenCaptureAccess() else {
+            print("[AUDIO] ScreenCapture access not granted; system audio capture unavailable.")
             logger.info("ScreenCapture access not granted; system audio capture unavailable.")
             return
         }
         
         isStarting = true
+        print("[AUDIO] capture starting")
         
         SCShareableContent.getExcludingDesktopWindows(false, onScreenWindowsOnly: true) { [weak self] content, error in
             guard let self = self else { return }
             self.isStarting = false
             
             if let error = error {
+                print("[AUDIO] Failed to query SCShareableContent: \(error.localizedDescription)")
                 logger.error("Failed to query SCShareableContent: \(error.localizedDescription)")
                 return
             }
             
             guard let display = content?.displays.first else {
+                print("[AUDIO] No active display found for audio capture filter")
                 logger.error("No active display found for audio capture filter")
                 return
             }
@@ -66,20 +70,25 @@ public final class SystemAudioMonitor: NSObject, SCStreamOutput, SCStreamDelegat
             do {
                 let newStream = SCStream(filter: filter, configuration: config, delegate: self)
                 try newStream.addStreamOutput(self, type: .audio, sampleHandlerQueue: self.audioQueue)
+                self.stream = newStream
                 
                 newStream.startCapture { [weak self] startError in
                     guard let self = self else { return }
                     if let startError = startError {
+                        print("[AUDIO] SCStream start failed: \(startError.localizedDescription)")
                         logger.error("SCStream start failed: \(startError.localizedDescription)")
+                        self.stream = nil
                         self.isMonitoring = false
                     } else {
-                        self.stream = newStream
                         self.isMonitoring = true
+                        print("[AUDIO] capture started")
                         logger.info("SystemAudioMonitor started successfully (16kHz Mono)")
                     }
                 }
             } catch {
+                print("[AUDIO] SCStream initialization failed: \(error.localizedDescription)")
                 logger.error("SCStream initialization failed: \(error.localizedDescription)")
+                self.stream = nil
                 self.isMonitoring = false
             }
         }
@@ -87,7 +96,7 @@ public final class SystemAudioMonitor: NSObject, SCStreamOutput, SCStreamDelegat
     
     /// Stops system audio capture and tears down stream to guarantee 0% CPU when Music Mode is off.
     public func stopMonitoring() {
-        guard stream != nil || isMonitoring else { return }
+        guard stream != nil || isMonitoring || isStarting else { return }
         
         let oldStream = stream
         self.stream = nil

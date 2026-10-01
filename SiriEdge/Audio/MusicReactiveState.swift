@@ -1,6 +1,7 @@
 import Foundation
 import QuartzCore
 import os.lock
+import Combine
 
 /// Thread-safe, allocation-free snapshot of current music and beat metrics.
 public struct AudioSnapshot: Sendable {
@@ -30,11 +31,15 @@ public struct AudioSnapshot: Sendable {
 
 /// Shared, thread-safe state container bridging the background audio queue to the Metal render loop.
 /// Zero per-frame allocations, lock-protected with os_unfair_lock.
-public final class MusicReactiveState: @unchecked Sendable {
+public final class MusicReactiveState: ObservableObject, @unchecked Sendable {
     public static let shared = MusicReactiveState()
+    
+    @Published public private(set) var isAudioActive: Bool = false
+    @Published public private(set) var beatPulse: Float = 0.0
     
     private var lock = os_unfair_lock_s()
     private var currentSnapshot = AudioSnapshot()
+    private var lastUIUpdateTime: Double = 0.0
     
     private init() {}
     
@@ -46,14 +51,27 @@ public final class MusicReactiveState: @unchecked Sendable {
         highLevel: Float,
         isAudioActive: Bool
     ) {
+        let now = CACurrentMediaTime()
         os_unfair_lock_lock(&lock)
         currentSnapshot.audioLevel = audioLevel
         currentSnapshot.beatPulse = beatPulse
         currentSnapshot.bassLevel = bassLevel
         currentSnapshot.highLevel = highLevel
         currentSnapshot.isAudioActive = isAudioActive
-        currentSnapshot.timestamp = CACurrentMediaTime()
+        currentSnapshot.timestamp = now
         os_unfair_lock_unlock(&lock)
+        
+        // Throttled UI publish to main thread (~10Hz)
+        if now - lastUIUpdateTime >= 0.10 {
+            lastUIUpdateTime = now
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                if self.isAudioActive != isAudioActive {
+                    self.isAudioActive = isAudioActive
+                }
+                self.beatPulse = beatPulse
+            }
+        }
     }
     
     /// Fast, non-blocking query used by EdgeRenderer in draw(in:) with zero heap allocations.
@@ -64,10 +82,18 @@ public final class MusicReactiveState: @unchecked Sendable {
         return snap
     }
     
+    public func snapshot() -> AudioSnapshot {
+        return getSnapshot()
+    }
+    
     /// Resets all values to silence when audio stops or Music Mode is toggled off.
     public func reset() {
         os_unfair_lock_lock(&lock)
         currentSnapshot = AudioSnapshot()
         os_unfair_lock_unlock(&lock)
+        DispatchQueue.main.async { [weak self] in
+            self?.isAudioActive = false
+            self?.beatPulse = 0.0
+        }
     }
 }
