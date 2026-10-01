@@ -113,6 +113,10 @@ public final class EdgeAnimation {
         public var transparency: Float = 0.25
         public var glowStrength: Float = 0.70
         public var isBatterySaver: Bool = true
+        public var isMusicModeEnabled: Bool = false
+        public var reactivityMultiplier: Float = 1.0
+        public var beatMultiplier: Float = 1.0
+        public var musicAnimationStyle: EdgeSettings.MusicAnimationStyle = .subtle
     }
     
     public var config: Config = Config()
@@ -130,7 +134,11 @@ public final class EdgeAnimation {
             brightness: s.brightness,
             transparency: s.transparency,
             glowStrength: s.glowStrength,
-            isBatterySaver: s.isBatterySaverActive
+            isBatterySaver: s.isBatterySaverActive,
+            isMusicModeEnabled: s.isMusicModeEnabled,
+            reactivityMultiplier: s.musicReactivityLevel.multiplier,
+            beatMultiplier: s.beatResponseLevel.multiplier,
+            musicAnimationStyle: s.musicAnimationStyle
         )
     }
     
@@ -182,8 +190,32 @@ public final class EdgeAnimation {
             return false
         }
         
-        // Thinking (Chasing Flow) animation: 3 evenly spaced pulses flowing around perimeter
-        let speed: Float = 0.22
+        // Check for active Music Mode modulation
+        var audioLevel: Float = 0.0
+        var beatPulse: Float = 0.0
+        var bassLevel: Float = 0.0
+        
+        if config.isMusicModeEnabled {
+            let snap = MusicReactiveState.shared.getSnapshot()
+            if snap.isAudioActive {
+                audioLevel = snap.audioLevel
+                beatPulse = snap.beatPulse
+                bassLevel = snap.bassLevel
+            }
+        }
+        
+        // Base pulse speed: modulated subtly by music energy and beat transients
+        let speedBoost: Float
+        if config.isMusicModeEnabled && (audioLevel > 0.001 || beatPulse > 0.001) {
+            let isDynamic = (config.musicAnimationStyle == .dynamic)
+            let levelEffect = isDynamic ? (audioLevel * 0.14) : (audioLevel * 0.07)
+            let beatEffect = isDynamic ? (beatPulse * 0.22) : (beatPulse * 0.12)
+            speedBoost = (levelEffect + beatEffect) * config.reactivityMultiplier
+        } else {
+            speedBoost = 0.0
+        }
+        
+        let speed: Float = 0.22 + speedBoost
         let p0 = fmod(t * speed, 1.0)
         let p1 = fmod(t * speed + 0.333, 1.0)
         let p2 = fmod(t * speed + 0.666, 1.0)
@@ -196,14 +228,23 @@ public final class EdgeAnimation {
         let basePulseInt: Float = 1.0
         let pulseInt = SIMD4<Float>(basePulseInt * 1.25, basePulseInt * 1.15, basePulseInt * 1.20, 0.0)
         
-        let glowMul = config.glowStrength * (config.isBatterySaver ? 0.90 : 1.0)
+        // Subtly modulate halo and brightness with audio energy
+        let glowBoost = (bassLevel * 0.15 * config.reactivityMultiplier + beatPulse * 0.20 * config.beatMultiplier)
+        let glowMul = config.glowStrength * (1.0 + glowBoost) * (config.isBatterySaver ? 0.90 : 1.0)
+        
+        let brightnessBoost = (audioLevel * 0.12 * config.reactivityMultiplier + beatPulse * 0.18 * config.beatMultiplier)
+        let effectiveBrightness = min(1.35, config.brightness * (1.0 + brightnessBoost))
+        
+        let coreIntensity = 1.25 * (1.0 + beatPulse * 0.18 * config.beatMultiplier)
+        let wakeBoost = bassLevel * 0.15 * config.reactivityMultiplier + beatPulse * 0.20 * config.beatMultiplier
+        let bloomBoost = audioLevel * 0.15 * config.reactivityMultiplier + beatPulse * 0.20 * config.beatMultiplier
         
         bufferPointer.pointee.resolution = SIMD2<Float>(Float(size.width), Float(size.height))
         bufferPointer.pointee.scaleFactor = Float(scaleFactor)
         bufferPointer.pointee.time = t
         bufferPointer.pointee.masterAlpha = currentAlpha
         bufferPointer.pointee.cornerRadius = cornerRadius
-        bufferPointer.pointee.stateBrightness = config.brightness
+        bufferPointer.pointee.stateBrightness = effectiveBrightness
         bufferPointer.pointee.stateSpeed = config.speed
         bufferPointer.pointee.stateGlowMultiplier = glowMul
         bufferPointer.pointee.coreWidth = 2.0
@@ -211,9 +252,9 @@ public final class EdgeAnimation {
         bufferPointer.pointee.wakeWidth = 6.0
         bufferPointer.pointee.bloomRadius = 12.0
         bufferPointer.pointee.baseIntensity = 0.50 * (config.isBatterySaver ? 0.85 : 1.0)
-        bufferPointer.pointee.coreIntensity = 1.25
-        bufferPointer.pointee.wakeIntensity = 0.55 * (config.isBatterySaver ? 0.75 : 1.0)
-        bufferPointer.pointee.bloomIntensity = 0.25 * (config.isBatterySaver ? 0.80 : 1.0)
+        bufferPointer.pointee.coreIntensity = coreIntensity
+        bufferPointer.pointee.wakeIntensity = (0.55 + wakeBoost) * (config.isBatterySaver ? 0.75 : 1.0)
+        bufferPointer.pointee.bloomIntensity = (0.25 + bloomBoost) * (config.isBatterySaver ? 0.80 : 1.0)
         bufferPointer.pointee.maxGlowExtent = 20.0
         bufferPointer.pointee.forwardPushLength = 0.045
         bufferPointer.pointee.backwardWakeLength = 0.140

@@ -58,6 +58,12 @@ public final class AppDelegate: NSObject, NSApplicationDelegate {
             settings.controlMode = .forceOff
         }
         
+        if args.contains("--music") {
+            settings.isMusicModeEnabled = true
+        } else if args.contains("--no-music") {
+            settings.isMusicModeEnabled = false
+        }
+        
         if args.contains("--simulate-ac") {
             self.simulatedChargerConnected = true
         } else if args.contains("--simulate-battery") {
@@ -171,6 +177,13 @@ public final class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         updateMenuStates()
+        
+        // Manage background system audio capture strictly based on overlay visibility and Music Mode setting
+        if overlayManager.isVisible && settings.isMusicModeEnabled {
+            SystemAudioMonitor.shared.startMonitoring()
+        } else {
+            SystemAudioMonitor.shared.stopMonitoring()
+        }
     }
     
     private func startManualTimeout() {
@@ -247,6 +260,7 @@ public final class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc private func quitApp() {
+        SystemAudioMonitor.shared.stopMonitoring()
         overlayManager.hide(animated: false)
         NSApp.terminate(nil)
     }

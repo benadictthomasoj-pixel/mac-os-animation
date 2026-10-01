@@ -34,6 +34,7 @@ swiftc \
     -O \
     "${PROJECT_DIR}/SiriEdge/Models/EdgeSettings.swift" \
     "${PROJECT_DIR}/SiriEdge/Models/PowerSource.swift" \
+    "${PROJECT_DIR}/SiriEdge/Audio/MusicReactiveState.swift" \
     "${PROJECT_DIR}/SiriEdge/Rendering/EdgeAnimation.swift" \
     "${PROJECT_DIR}/SiriEdge/Rendering/EdgeRenderer.swift" \
     "${PROJECT_DIR}/SiriEdge/Views/EdgeOverlayView.swift" \

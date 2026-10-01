@@ -27,6 +27,10 @@ public final class EdgeSettings: ObservableObject {
         public static let audioSource = "siri_edge_audio_source"
         public static let perDisplayFPS = "siri_edge_per_display_fps"
         public static let activityTimeoutMinutes = "siri_edge_activity_timeout_minutes"
+        public static let isMusicModeEnabled = "siri_edge_music_mode_enabled"
+        public static let musicReactivityLevel = "siri_edge_music_reactivity_level"
+        public static let beatResponseLevel = "siri_edge_beat_response_level"
+        public static let musicAnimationStyle = "siri_edge_music_animation_style"
     }
     
     // MARK: - Enums
@@ -81,6 +85,68 @@ public final class EdgeSettings: ObservableObject {
             case .fps60: return "60 FPS"
             case .fps120: return "120 FPS (ProMotion)"
             case .custom: return "Custom"
+            }
+        }
+    }
+    
+    public enum ReactivityLevel: String, CaseIterable, Identifiable {
+        case low = "low"
+        case medium = "medium"
+        case high = "high"
+        
+        public var id: String { rawValue }
+        
+        public var displayName: String {
+            switch self {
+            case .low: return "Low"
+            case .medium: return "Medium"
+            case .high: return "High"
+            }
+        }
+        
+        public var multiplier: Float {
+            switch self {
+            case .low: return 0.6
+            case .medium: return 1.0
+            case .high: return 1.5
+            }
+        }
+    }
+    
+    public enum BeatResponseLevel: String, CaseIterable, Identifiable {
+        case low = "low"
+        case medium = "medium"
+        case high = "high"
+        
+        public var id: String { rawValue }
+        
+        public var displayName: String {
+            switch self {
+            case .low: return "Low"
+            case .medium: return "Medium"
+            case .high: return "High"
+            }
+        }
+        
+        public var multiplier: Float {
+            switch self {
+            case .low: return 0.6
+            case .medium: return 1.0
+            case .high: return 1.5
+            }
+        }
+    }
+    
+    public enum MusicAnimationStyle: String, CaseIterable, Identifiable {
+        case subtle = "subtle"
+        case dynamic = "dynamic"
+        
+        public var id: String { rawValue }
+        
+        public var displayName: String {
+            switch self {
+            case .subtle: return "Subtle"
+            case .dynamic: return "Dynamic"
             }
         }
     }
@@ -206,6 +272,36 @@ public final class EdgeSettings: ObservableObject {
         }
     }
     
+    // MARK: - Music Mode Properties (Section 12 & 13)
+    
+    @Published public var isMusicModeEnabled: Bool {
+        didSet {
+            defaults.set(isMusicModeEnabled, forKey: Keys.isMusicModeEnabled)
+            notifyChanged()
+        }
+    }
+    
+    @Published public var musicReactivityLevel: ReactivityLevel {
+        didSet {
+            defaults.set(musicReactivityLevel.rawValue, forKey: Keys.musicReactivityLevel)
+            notifyChanged()
+        }
+    }
+    
+    @Published public var beatResponseLevel: BeatResponseLevel {
+        didSet {
+            defaults.set(beatResponseLevel.rawValue, forKey: Keys.beatResponseLevel)
+            notifyChanged()
+        }
+    }
+    
+    @Published public var musicAnimationStyle: MusicAnimationStyle {
+        didSet {
+            defaults.set(musicAnimationStyle.rawValue, forKey: Keys.musicAnimationStyle)
+            notifyChanged()
+        }
+    }
+    
     // MARK: - Computed Properties
     
     /// Target effective FPS
@@ -283,6 +379,19 @@ public final class EdgeSettings: ObservableObject {
         let audioSrc = d.string(forKey: Keys.audioSource) ?? "System Audio"
         self.audioSource = audioSrc
         
+        // Music Mode settings (Default: OFF for safety and zero battery impact when unused)
+        let isMusicMode = (d.object(forKey: Keys.isMusicModeEnabled) != nil) ? d.bool(forKey: Keys.isMusicModeEnabled) : false
+        self.isMusicModeEnabled = isMusicMode
+        
+        let reactStr = d.string(forKey: Keys.musicReactivityLevel)
+        self.musicReactivityLevel = reactStr.flatMap { ReactivityLevel(rawValue: $0) } ?? .medium
+        
+        let beatStr = d.string(forKey: Keys.beatResponseLevel)
+        self.beatResponseLevel = beatStr.flatMap { BeatResponseLevel(rawValue: $0) } ?? .medium
+        
+        let animStyleStr = d.string(forKey: Keys.musicAnimationStyle)
+        self.musicAnimationStyle = animStyleStr.flatMap { MusicAnimationStyle(rawValue: $0) } ?? .subtle
+        
         // Persist confirmed settings to defaults
         d.set(2, forKey: Keys.schemaVersion)
         d.set(mode.rawValue, forKey: Keys.controlMode)
@@ -300,6 +409,10 @@ public final class EdgeSettings: ObservableObject {
         d.set(isMusicReactive, forKey: Keys.isMusicReactiveEnabled)
         d.set(reactionStrength, forKey: Keys.musicReactionStrength)
         d.set(audioSrc, forKey: Keys.audioSource)
+        d.set(isMusicMode, forKey: Keys.isMusicModeEnabled)
+        d.set(self.musicReactivityLevel.rawValue, forKey: Keys.musicReactivityLevel)
+        d.set(self.beatResponseLevel.rawValue, forKey: Keys.beatResponseLevel)
+        d.set(self.musicAnimationStyle.rawValue, forKey: Keys.musicAnimationStyle)
     }
     
     private func notifyChanged() {

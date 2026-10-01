@@ -129,6 +129,65 @@ public struct SettingsView: View {
                         }
                     }
                     
+                    // MARK: - MUSIC MODE
+                    sectionCard(title: "MUSIC MODE", systemImage: "music.note") {
+                        VStack(alignment: .leading, spacing: 14) {
+                            Toggle(isOn: $settings.isMusicModeEnabled) {
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text("Music Mode")
+                                        .font(.system(size: 12, weight: .medium))
+                                    Text("Perimeter subtly reacts to system music and beats locally")
+                                        .font(.system(size: 11))
+                                        .foregroundColor(.secondary)
+                                }
+                            }
+                            .toggleStyle(.switch)
+                            
+                            if settings.isMusicModeEnabled {
+                                Divider()
+                                
+                                HStack {
+                                    Text("Audio Reactivity")
+                                        .font(.system(size: 12))
+                                    Spacer()
+                                    Picker("", selection: $settings.musicReactivityLevel) {
+                                        ForEach(EdgeSettings.ReactivityLevel.allCases) { level in
+                                            Text(level.displayName).tag(level)
+                                        }
+                                    }
+                                    .pickerStyle(.segmented)
+                                    .frame(width: 200)
+                                }
+                                
+                                HStack {
+                                    Text("Beat Response")
+                                        .font(.system(size: 12))
+                                    Spacer()
+                                    Picker("", selection: $settings.beatResponseLevel) {
+                                        ForEach(EdgeSettings.BeatResponseLevel.allCases) { beat in
+                                            Text(beat.displayName).tag(beat)
+                                        }
+                                    }
+                                    .pickerStyle(.segmented)
+                                    .frame(width: 200)
+                                }
+                                
+                                HStack {
+                                    Text("Music Animation")
+                                        .font(.system(size: 12))
+                                    Spacer()
+                                    Picker("", selection: $settings.musicAnimationStyle) {
+                                        ForEach(EdgeSettings.MusicAnimationStyle.allCases) { style in
+                                            Text(style.displayName).tag(style)
+                                        }
+                                    }
+                                    .pickerStyle(.segmented)
+                                    .frame(width: 160)
+                                }
+                            }
+                        }
+                    }
+                    
                     // MARK: - DISPLAY
                     sectionCard(title: "DISPLAY", systemImage: "display") {
                         VStack(spacing: 10) {
