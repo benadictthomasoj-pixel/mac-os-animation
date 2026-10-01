@@ -1,0 +1,4690 @@
+{
+  "summary": [
+    {
+      "test_name": "SiriEdge_ON_Default_60FPS",
+      "duration_sec": 40,
+      "sample_count": 39,
+      "start_batt_pct": 52,
+      "end_batt_pct": 52,
+      "start_voltage_mv": 11607,
+      "end_voltage_mv": 11600,
+      "cpu_avg": 5.71,
+      "cpu_min": 5.3,
+      "cpu_max": 6.8,
+      "cpu_peak": 6.8,
+      "rss_initial_mb": 75.23,
+      "rss_final_mb": 75.23,
+      "rss_delta_mb": 0.0,
+      "avg_system_power_w": 4.202,
+      "avg_amperage_ma": -362.2
+    },
+    {
+      "test_name": "SiriEdge_5Minute_Sustained",
+      "duration_sec": 300,
+      "sample_count": 147,
+      "start_batt_pct": 52,
+      "end_batt_pct": 52,
+      "start_voltage_mv": 11600,
+      "end_voltage_mv": 11585,
+      "cpu_avg": 5.56,
+      "cpu_min": 4.2,
+      "cpu_max": 7.5,
+      "cpu_peak": 7.5,
+      "rss_initial_mb": 75.23,
+      "rss_final_mb": 75.41,
+      "rss_delta_mb": 0.18,
+      "avg_system_power_w": 4.179,
+      "avg_amperage_ma": -360.4
+    },
+    {
+      "test_name": "SiriEdge_OFF_Baseline",
+      "duration_sec": 40,
+      "sample_count": 38,
+      "start_batt_pct": 52,
+      "end_batt_pct": 52,
+      "start_voltage_mv": 11585,
+      "end_voltage_mv": 11592,
+      "cpu_avg": 0.0,
+      "cpu_min": 0.0,
+      "cpu_max": 0.0,
+      "cpu_peak": 0.0,
+      "rss_initial_mb": 0.0,
+      "rss_final_mb": 0.0,
+      "rss_delta_mb": 0.0,
+      "avg_system_power_w": 3.898,
+      "avg_amperage_ma": -336.4
+    }
+  ],
+  "raw": {
+    "SiriEdge_ON_Default_60FPS": [
+      {
+        "t_sec": 0.01,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:35.94",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 366,
+          "voltage_mv": 11607,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -354,
+          "instant_power_watts": 4.109
+        }
+      },
+      {
+        "t_sec": 1.03,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.2,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.01",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 366,
+          "voltage_mv": 11607,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -354,
+          "instant_power_watts": 4.109
+        }
+      },
+      {
+        "t_sec": 2.07,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.9,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.07",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 366,
+          "voltage_mv": 11607,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -354,
+          "instant_power_watts": 4.109
+        }
+      },
+      {
+        "t_sec": 3.11,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.1,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.14",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 366,
+          "voltage_mv": 11607,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -354,
+          "instant_power_watts": 4.109
+        }
+      },
+      {
+        "t_sec": 4.15,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.1,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.21",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 366,
+          "voltage_mv": 11607,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -354,
+          "instant_power_watts": 4.109
+        }
+      },
+      {
+        "t_sec": 5.19,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.27",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 366,
+          "voltage_mv": 11607,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -354,
+          "instant_power_watts": 4.109
+        }
+      },
+      {
+        "t_sec": 6.22,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.33",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 366,
+          "voltage_mv": 11607,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -354,
+          "instant_power_watts": 4.109
+        }
+      },
+      {
+        "t_sec": 7.26,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.40",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 366,
+          "voltage_mv": 11607,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -354,
+          "instant_power_watts": 4.109
+        }
+      },
+      {
+        "t_sec": 8.31,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.46",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 366,
+          "voltage_mv": 11607,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -354,
+          "instant_power_watts": 4.109
+        }
+      },
+      {
+        "t_sec": 9.35,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.0,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.53",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 366,
+          "voltage_mv": 11607,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -354,
+          "instant_power_watts": 4.109
+        }
+      },
+      {
+        "t_sec": 10.39,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.59",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 11.41,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.65",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 12.46,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.71",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 13.5,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.8,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.78",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 14.54,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.87",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 15.58,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.93",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 16.63,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:36.99",
+          "state": "R"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 17.67,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.06",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 18.71,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.12",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 19.75,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.18",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 20.79,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.25",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 21.83,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.31",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 22.88,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.37",
+          "state": "R"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 23.92,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.44",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 24.96,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.50",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 26.0,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.56",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 27.04,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.62",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 28.09,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.68",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 29.13,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.75",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 30.16,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.81",
+          "state": "R"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 31.2,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.87",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 32.24,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:37.93",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 33.28,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.1,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:38.00",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 34.32,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:38.06",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 35.36,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:38.12",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 36.41,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:38.19",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 37.45,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:38.25",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 38.49,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:38.31",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 39.51,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:38.38",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      }
+    ],
+    "SiriEdge_5Minute_Sustained": [
+      {
+        "t_sec": 0.01,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:38.44",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 2.03,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:38.56",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 4.08,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:38.69",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 6.12,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:38.81",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 8.16,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:38.93",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 10.2,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:39.05",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 12.24,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:39.18",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 14.28,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:39.30",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 16.33,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:39.42",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 18.37,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:39.55",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 20.41,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:39.67",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 22.46,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:39.79",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 24.5,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:39.92",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 26.54,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.2,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:40.06",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 28.59,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:40.19",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 352,
+          "voltage_mv": 11600,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -365,
+          "instant_power_watts": 4.234
+        }
+      },
+      {
+        "t_sec": 30.63,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.1,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:40.34",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 32.67,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.9,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:40.46",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 34.71,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.0,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:40.58",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 36.75,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:40.71",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 38.79,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:40.84",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 40.84,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.0,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:40.97",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 42.88,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:41.09",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 44.92,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:41.21",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 46.96,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:41.33",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 49.0,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:41.45",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 51.05,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:41.57",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 53.09,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:41.70",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 55.13,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:41.82",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 57.17,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.1,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:41.96",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 59.22,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:42.08",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 61.26,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.9,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:42.20",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 63.3,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:42.33",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 65.34,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:42.44",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 67.38,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 4.2,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:42.55",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 69.4,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:42.65",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 71.44,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:42.77",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 73.49,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:42.90",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 75.53,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:43.02",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 77.57,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.2,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:43.14",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 79.61,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:43.26",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 81.66,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:43.38",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 83.7,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:43.51",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 85.74,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:43.63",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 87.79,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:43.75",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 355,
+          "voltage_mv": 11597,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -391,
+          "instant_power_watts": 4.534
+        }
+      },
+      {
+        "t_sec": 89.83,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:43.87",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 91.85,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:43.99",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 93.9,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:44.11",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 95.94,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:44.25",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 97.98,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:44.37",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 100.02,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:44.49",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 102.07,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:44.61",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 104.11,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:44.73",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 106.15,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:44.85",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 108.19,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:44.97",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 110.23,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:45.09",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 112.27,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:45.20",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 114.31,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:45.33",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 116.35,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:45.45",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 118.4,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:45.57",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 120.44,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:45.69",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 122.48,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:45.81",
+          "state": "R"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 124.52,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:45.93",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 126.56,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:46.05",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 128.6,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.1,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:46.16",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 130.64,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:46.28",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 132.69,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:46.40",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 134.73,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:46.52",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 136.77,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:46.64",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 138.81,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:46.75",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 140.85,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:46.87",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 142.89,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.9,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:47.00",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 144.93,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.2,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:47.11",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 146.97,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.1,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:47.23",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 149.01,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.2,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:47.35",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 326,
+          "voltage_mv": 11594,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -353,
+          "instant_power_watts": 4.093
+        }
+      },
+      {
+        "t_sec": 151.06,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:47.47",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 153.1,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:47.59",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 155.14,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:47.71",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 157.18,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:47.84",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 159.22,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:47.96",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 161.26,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:48.08",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 163.3,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:48.20",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 165.34,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:48.31",
+          "state": "R"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 167.39,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:48.43",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 169.43,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:48.55",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 171.47,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.2,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:48.67",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 173.51,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:48.79",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 175.55,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:48.90",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 177.59,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:49.02",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 179.63,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:49.14",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 181.67,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:49.26",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 183.71,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:49.38",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 185.75,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.1,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:49.50",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 187.79,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:49.61",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 189.83,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:49.73",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 191.87,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:49.85",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 193.91,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:49.97",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 195.96,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.2,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:50.09",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 198.0,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:50.20",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 200.04,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:50.32",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 202.08,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.2,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:50.44",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 204.12,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:50.57",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 206.16,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.2,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:50.68",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 208.2,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:50.80",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11595,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -347,
+          "instant_power_watts": 4.023
+        }
+      },
+      {
+        "t_sec": 210.24,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:50.92",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 212.28,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:51.04",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 214.32,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:51.15",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 216.36,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:51.27",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 218.41,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:51.40",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 220.45,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:51.52",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 222.49,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:51.63",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 224.53,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:51.75",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 226.58,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:51.87",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 228.62,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:51.99",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 230.66,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:52.11",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 232.7,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.2,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:52.23",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 234.74,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:52.35",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 236.78,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:52.47",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 238.82,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 7.5,
+          "rss_kb": 77040,
+          "rss_mb": 75.23,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:52.61",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 240.85,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 4.8,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:52.74",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 242.88,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 4.4,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:52.84",
+          "state": "R"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 244.92,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.4,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:52.97",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 246.96,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.1,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:53.11",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 249.0,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.9,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:53.24",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 251.05,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.1,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:53.37",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 253.09,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.8,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:53.51",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 255.14,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.9,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:53.64",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 257.17,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:53.77",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 259.21,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:53.89",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 261.26,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:54.02",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 263.3,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:54.15",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 265.34,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:54.27",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 267.38,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:54.39",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 382,
+          "voltage_mv": 11588,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -351,
+          "instant_power_watts": 4.067
+        }
+      },
+      {
+        "t_sec": 269.42,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:54.51",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 271.47,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:54.63",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 273.51,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:54.75",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 275.55,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.9,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:54.88",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 277.59,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:55.00",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 279.63,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.8,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:55.12",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 281.67,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 6.2,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:55.27",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 283.71,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.4,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:55.39",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 285.76,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:55.51",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 287.8,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:55.63",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 289.84,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.3,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:55.75",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 291.88,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:55.87",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 293.92,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.5,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:56.00",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 295.96,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.6,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:56.12",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 298.01,
+        "pid": 21028,
+        "proc": {
+          "cpu_percent": 5.7,
+          "rss_kb": 77216,
+          "rss_mb": 75.41,
+          "vsz_kb": 489308352,
+          "vsz_mb": 477840.19,
+          "cputime": "0:56.24",
+          "state": "S"
+        },
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      }
+    ],
+    "SiriEdge_OFF_Baseline": [
+      {
+        "t_sec": 0.02,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 1.08,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 2.14,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 3.2,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 4.26,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 5.31,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 6.34,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 7.39,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 8.44,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 9.47,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 10.53,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 11.6,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 12.66,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 13.72,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 14.78,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 15.85,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 16.91,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 17.97,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 19.03,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 20.1,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 21.16,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 22.22,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 23.28,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 24.34,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 25.4,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 26.46,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 319,
+          "voltage_mv": 11585,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -356,
+          "instant_power_watts": 4.124
+        }
+      },
+      {
+        "t_sec": 27.5,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11592,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -294,
+          "instant_power_watts": 3.408
+        }
+      },
+      {
+        "t_sec": 28.56,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11592,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -294,
+          "instant_power_watts": 3.408
+        }
+      },
+      {
+        "t_sec": 29.61,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11592,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -294,
+          "instant_power_watts": 3.408
+        }
+      },
+      {
+        "t_sec": 30.65,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11592,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -294,
+          "instant_power_watts": 3.408
+        }
+      },
+      {
+        "t_sec": 31.7,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11592,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -294,
+          "instant_power_watts": 3.408
+        }
+      },
+      {
+        "t_sec": 32.76,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11592,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -294,
+          "instant_power_watts": 3.408
+        }
+      },
+      {
+        "t_sec": 33.82,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11592,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -294,
+          "instant_power_watts": 3.408
+        }
+      },
+      {
+        "t_sec": 34.88,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11592,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -294,
+          "instant_power_watts": 3.408
+        }
+      },
+      {
+        "t_sec": 35.94,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11592,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -294,
+          "instant_power_watts": 3.408
+        }
+      },
+      {
+        "t_sec": 37.01,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11592,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -294,
+          "instant_power_watts": 3.408
+        }
+      },
+      {
+        "t_sec": 38.07,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11592,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -294,
+          "instant_power_watts": 3.408
+        }
+      },
+      {
+        "t_sec": 39.13,
+        "pid": null,
+        "proc": null,
+        "batt": {
+          "avg_time_to_empty_min": 381,
+          "voltage_mv": 11592,
+          "max_capacity": 100,
+          "current_capacity_pct": 52,
+          "cycle_count": 143,
+          "instant_amperage_ma": -294,
+          "instant_power_watts": 3.408
+        }
+      }
+    ]
+  }
+}

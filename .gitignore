@@ -1,0 +1,15 @@
+.DS_Store
+.build/
+*.app/
+*.saver/
+*.tar.gz
+*.o
+*.dia
+*.d
+*.swiftmodule
+*.swiftdeps
+*.swiftdoc
+DerivedData/
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/

@@ -1,0 +1,110 @@
+[
+  {
+    "name": "1. AUTO + Battery + No Music",
+    "description": "Auto mode on battery without music -> Expected: Inactive / 0 FPS / Battery Optimized",
+    "avg_cpu_percent": 0.35,
+    "avg_rss_mb": 78.74,
+    "avg_render_callbacks_sec": 0.0,
+    "avg_command_buffers_sec": 0.0,
+    "avg_audio_callbacks_sec": 0.0,
+    "avg_fps": 0.0,
+    "is_paused": true,
+    "system_power_w": 3.443
+  },
+  {
+    "name": "2. AUTO + Battery + Music",
+    "description": "Auto mode on battery with music -> Expected: Active / 60 FPS Battery Cap / Music Reactive ON",
+    "avg_cpu_percent": 3.98,
+    "avg_rss_mb": 81.32,
+    "avg_render_callbacks_sec": 25.0,
+    "avg_command_buffers_sec": 25.0,
+    "avg_audio_callbacks_sec": 0.0,
+    "avg_fps": 50.0,
+    "is_paused": false,
+    "system_power_w": 3.443
+  },
+  {
+    "name": "3. AUTO + Charger + No Music",
+    "description": "Auto mode on AC power without music -> Expected: Active / AC Performance Profile / Music Reactive OFF",
+    "avg_cpu_percent": 1.78,
+    "avg_rss_mb": 81.48,
+    "avg_render_callbacks_sec": 6.2,
+    "avg_command_buffers_sec": 6.0,
+    "avg_audio_callbacks_sec": 0.0,
+    "avg_fps": 0.0,
+    "is_paused": true,
+    "system_power_w": 5.507
+  },
+  {
+    "name": "4. AUTO + Charger + Music",
+    "description": "Auto mode on AC power with music -> Expected: Active / AC Performance Profile / Music Reactive ON",
+    "avg_cpu_percent": 3.83,
+    "avg_rss_mb": 80.94,
+    "avg_render_callbacks_sec": 25.0,
+    "avg_command_buffers_sec": 25.0,
+    "avg_audio_callbacks_sec": 0.0,
+    "avg_fps": 50.0,
+    "is_paused": false,
+    "system_power_w": 5.92
+  },
+  {
+    "name": "5. MANUAL ON + Battery + No Music",
+    "description": "Manual ON on battery without music -> Expected: Active / 60 FPS Battery Cap",
+    "avg_cpu_percent": 3.97,
+    "avg_rss_mb": 80.93,
+    "avg_render_callbacks_sec": 25.0,
+    "avg_command_buffers_sec": 25.0,
+    "avg_audio_callbacks_sec": 0.0,
+    "avg_fps": 50.0,
+    "is_paused": false,
+    "system_power_w": 5.92
+  },
+  {
+    "name": "6. MANUAL ON + Battery + Music",
+    "description": "Manual ON on battery with music -> Expected: Active / 60 FPS Battery Cap / Music Reactive ON",
+    "avg_cpu_percent": 4.15,
+    "avg_rss_mb": 80.76,
+    "avg_render_callbacks_sec": 25.0,
+    "avg_command_buffers_sec": 25.0,
+    "avg_audio_callbacks_sec": 0.0,
+    "avg_fps": 50.0,
+    "is_paused": false,
+    "system_power_w": 5.92
+  },
+  {
+    "name": "7. MANUAL ON + Charger",
+    "description": "Manual ON on AC power -> Expected: Active / AC Performance Profile",
+    "avg_cpu_percent": 4.05,
+    "avg_rss_mb": 80.53,
+    "avg_render_callbacks_sec": 25.0,
+    "avg_command_buffers_sec": 25.0,
+    "avg_audio_callbacks_sec": 0.0,
+    "avg_fps": 50.0,
+    "is_paused": false,
+    "system_power_w": 5.92
+  },
+  {
+    "name": "8. MANUAL OFF + Battery + Music",
+    "description": "Manual OFF on battery with music -> Expected: Inactive / 0 FPS / Everything OFF",
+    "avg_cpu_percent": 0.33,
+    "avg_rss_mb": 77.93,
+    "avg_render_callbacks_sec": 0.0,
+    "avg_command_buffers_sec": 0.0,
+    "avg_audio_callbacks_sec": 0.0,
+    "avg_fps": 0.0,
+    "is_paused": true,
+    "system_power_w": 5.92
+  },
+  {
+    "name": "9. MANUAL OFF + Charger + Music",
+    "description": "Manual OFF on AC power with music -> Expected: Inactive / 0 FPS / Everything OFF",
+    "avg_cpu_percent": 0.42,
+    "avg_rss_mb": 77.96,
+    "avg_render_callbacks_sec": 0.0,
+    "avg_command_buffers_sec": 0.0,
+    "avg_audio_callbacks_sec": 0.0,
+    "avg_fps": 0.0,
+    "is_paused": true,
+    "system_power_w": 5.92
+  }
+]

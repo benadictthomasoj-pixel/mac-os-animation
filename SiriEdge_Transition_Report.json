@@ -1,0 +1,192 @@
+[
+  {
+    "transition": "1. music starts",
+    "description": "In AUTO on battery: No music -> Music starts",
+    "step1": {
+      "rps": 0,
+      "cps": 0,
+      "fps": 0.0,
+      "paused": true,
+      "renderers": 0
+    },
+    "step2": {
+      "rps": 28,
+      "cps": 28,
+      "fps": 60.0,
+      "paused": false,
+      "renderers": 1
+    },
+    "passed": true
+  },
+  {
+    "transition": "2. music stops",
+    "description": "In AUTO on battery: Music playing -> Music stops (silence debounce)",
+    "step1": {
+      "rps": 28,
+      "cps": 28,
+      "fps": 60.0,
+      "paused": false,
+      "renderers": 1
+    },
+    "step2": {
+      "rps": 0,
+      "cps": 0,
+      "fps": 0.0,
+      "paused": true,
+      "renderers": 0
+    },
+    "passed": true
+  },
+  {
+    "transition": "3. charger connects",
+    "description": "In AUTO without music: On battery -> Charger connects (glow remains inactive, profile updates)",
+    "step1": {
+      "rps": 0,
+      "cps": 0,
+      "fps": 0.0,
+      "paused": true,
+      "renderers": 0
+    },
+    "step2": {
+      "rps": 0,
+      "cps": 0,
+      "fps": 0.0,
+      "paused": true,
+      "renderers": 0
+    },
+    "passed": true
+  },
+  {
+    "transition": "4. charger disconnects",
+    "description": "In AUTO without music: On charger -> Charger disconnects (glow remains inactive)",
+    "step1": {
+      "rps": 0,
+      "cps": 0,
+      "fps": 0.0,
+      "paused": true,
+      "renderers": 0
+    },
+    "step2": {
+      "rps": 0,
+      "cps": 0,
+      "fps": 0.0,
+      "paused": true,
+      "renderers": 0
+    },
+    "passed": true
+  },
+  {
+    "transition": "5. manual ON",
+    "description": "From Inactive state -> User selects Manual ON",
+    "step1": {
+      "rps": 0,
+      "cps": 0,
+      "fps": 0.0,
+      "paused": true,
+      "renderers": 0
+    },
+    "step2": {
+      "rps": 29,
+      "cps": 29,
+      "fps": 60.0,
+      "paused": false,
+      "renderers": 1
+    },
+    "passed": true
+  },
+  {
+    "transition": "6. manual OFF",
+    "description": "From Active state -> User selects Manual OFF",
+    "step1": {
+      "rps": 29,
+      "cps": 29,
+      "fps": 60.0,
+      "paused": false,
+      "renderers": 1
+    },
+    "step2": {
+      "rps": 0,
+      "cps": 0,
+      "fps": 0.0,
+      "paused": true,
+      "renderers": 0
+    },
+    "passed": true
+  },
+  {
+    "transition": "7. AUTO \u2192 MANUAL ON",
+    "description": "From Auto idle on battery -> User selects Manual ON",
+    "step1": {
+      "rps": 0,
+      "cps": 0,
+      "fps": 0.0,
+      "paused": true,
+      "renderers": 0
+    },
+    "step2": {
+      "rps": 28,
+      "cps": 28,
+      "fps": 60.0,
+      "paused": false,
+      "renderers": 1
+    },
+    "passed": true
+  },
+  {
+    "transition": "8. MANUAL ON \u2192 AUTO",
+    "description": "From Manual ON on battery without music -> User returns to AUTO",
+    "step1": {
+      "rps": 29,
+      "cps": 29,
+      "fps": 60.0,
+      "paused": false,
+      "renderers": 1
+    },
+    "step2": {
+      "rps": 0,
+      "cps": 0,
+      "fps": 0.0,
+      "paused": true,
+      "renderers": 0
+    },
+    "passed": true
+  },
+  {
+    "transition": "9. AUTO \u2192 MANUAL OFF",
+    "description": "From Auto active with music -> User selects Manual OFF",
+    "step1": {
+      "rps": 28,
+      "cps": 28,
+      "fps": 60.0,
+      "paused": false,
+      "renderers": 1
+    },
+    "step2": {
+      "rps": 0,
+      "cps": 0,
+      "fps": 0.0,
+      "paused": true,
+      "renderers": 0
+    },
+    "passed": true
+  },
+  {
+    "transition": "10. MANUAL OFF \u2192 AUTO",
+    "description": "From Manual OFF with music -> User returns to AUTO",
+    "step1": {
+      "rps": 0,
+      "cps": 0,
+      "fps": 0.0,
+      "paused": true,
+      "renderers": 0
+    },
+    "step2": {
+      "rps": 28,
+      "cps": 28,
+      "fps": 60.0,
+      "paused": false,
+      "renderers": 1
+    },
+    "passed": true
+  }
+]

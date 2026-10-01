@@ -1,0 +1,9 @@
+{
+  "youtube_music_active": true,
+  "youtube_music_silent": true,
+  "spotify_beat_reactive": true,
+  "spotify_stopped": true,
+  "charger_auto_ac": true,
+  "default_animation_think_processing": true,
+  "ui_stutter_mitigations": true
+}

@@ -1,0 +1,7 @@
+{
+  "auto_idle_silent": true,
+  "auto_charger_no_music": true,
+  "manual_on_override": true,
+  "manual_off_override": true,
+  "background_monitor_active": true
+}

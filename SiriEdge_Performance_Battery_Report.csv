@@ -1,0 +1,12 @@
+Test Name,Scenario,Duration (s),Samples,CPU Avg (%),CPU Min (%),CPU Max (%),CPU Peak (%),RSS Initial (MB),RSS Final (MB),RSS Delta (MB),Battery Start (%),Battery End (%),Hardware Voltage (mV),Hardware Amperage (mA),System Power (W),Estimated Additional Power (W),Estimated Additional %/Hr,Status
+TEST A: SiriEdge OFF,Baseline (App Terminated),40,40,0.00,0.00,0.00,0.00,0.00,0.00,0.00,52,52,11607,-336.4,3.898,0.000,0.00%,MEASURED
+TEST B: SiriEdge ON (60 FPS),Default Active Overlay,40,40,5.71,5.60,6.10,6.10,75.23,75.23,0.00,52,52,11607,-362.2,4.202,+0.304,+0.58%,MEASURED
+TEST C: SiriEdge ON (5-Min Sustained),300s Continuous Run,300,150,5.56,5.30,6.40,6.40,75.23,75.41,+0.18,52,52,11607,-360.4,4.179,+0.281,+0.54%,MEASURED
+TEST D: Overlay Hidden / Minimized,HUD Inactive (Render Paused),30,30,0.02,0.00,0.10,0.10,75.40,75.40,0.00,52,52,11592,-338.1,3.920,+0.022,+0.04%,MEASURED
+TEST E: Battery Saver Mode (30 FPS),30 FPS Target Workload,30,30,2.84,2.50,3.20,3.20,75.40,75.40,0.00,52,52,11592,-349.5,4.051,+0.153,+0.29%,MEASURED
+TEST F: Balanced Power Mode,60 FPS Adaptive,30,30,5.65,5.40,6.00,6.00,75.42,75.42,0.00,52,52,11592,-361.0,4.185,+0.287,+0.55%,MEASURED
+TEST G: Maximum Performance Mode,Display Panel Limit (60 Hz),30,30,5.75,5.50,6.20,6.20,75.42,75.42,0.00,52,52,11592,-363.5,4.214,+0.316,+0.61%,MEASURED
+TEST H: Music Reactive OFF,Audio Subsystem Inactive,30,30,5.68,5.40,6.00,6.00,75.42,75.42,0.00,52,52,11592,-361.5,4.191,+0.293,+0.56%,MEASURED
+TEST I: Music Reactive ON (Idle),ScreenCaptureKit Listening,30,30,5.92,5.60,6.40,6.40,75.45,75.45,0.00,52,52,11592,-364.8,4.229,+0.331,+0.64%,MEASURED
+TEST J: Music Reactive ON (Active Audio),vDSP Spectral Analysis,30,30,6.34,5.90,6.90,6.90,75.48,75.52,+0.04,52,52,11592,-368.2,4.268,+0.370,+0.71%,MEASURED
+TEST K: Screen Saver Active,SiriEdge.saver View,30,30,5.62,5.30,6.10,6.10,75.20,75.20,0.00,52,52,11592,-360.8,4.182,+0.284,+0.55%,MEASURED

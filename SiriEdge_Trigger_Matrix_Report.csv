@@ -1,0 +1,10 @@
+Scenario,Description,AvgCPU_Percent,AvgRSS_MB,RenderCallbacksPerSec,CmdBuffersPerSec,AudioCallbacksPerSec,ActualFPS,IsPaused,SystemPower_W
+"1. AUTO + Battery + No Music","Auto mode on battery without music -> Expected: Inactive / 0 FPS / Battery Optimized",0.35,78.74,0.0,0.0,0.0,0.0,True,3.443
+"2. AUTO + Battery + Music","Auto mode on battery with music -> Expected: Active / 60 FPS Battery Cap / Music Reactive ON",3.98,81.32,25.0,25.0,0.0,50.0,False,3.443
+"3. AUTO + Charger + No Music","Auto mode on AC power without music -> Expected: Active / AC Performance Profile / Music Reactive OFF",1.78,81.48,6.2,6.0,0.0,0.0,True,5.507
+"4. AUTO + Charger + Music","Auto mode on AC power with music -> Expected: Active / AC Performance Profile / Music Reactive ON",3.83,80.94,25.0,25.0,0.0,50.0,False,5.92
+"5. MANUAL ON + Battery + No Music","Manual ON on battery without music -> Expected: Active / 60 FPS Battery Cap",3.97,80.93,25.0,25.0,0.0,50.0,False,5.92
+"6. MANUAL ON + Battery + Music","Manual ON on battery with music -> Expected: Active / 60 FPS Battery Cap / Music Reactive ON",4.15,80.76,25.0,25.0,0.0,50.0,False,5.92
+"7. MANUAL ON + Charger","Manual ON on AC power -> Expected: Active / AC Performance Profile",4.05,80.53,25.0,25.0,0.0,50.0,False,5.92
+"8. MANUAL OFF + Battery + Music","Manual OFF on battery with music -> Expected: Inactive / 0 FPS / Everything OFF",0.33,77.93,0.0,0.0,0.0,0.0,True,5.92
+"9. MANUAL OFF + Charger + Music","Manual OFF on AC power with music -> Expected: Inactive / 0 FPS / Everything OFF",0.42,77.96,0.0,0.0,0.0,0.0,True,5.92

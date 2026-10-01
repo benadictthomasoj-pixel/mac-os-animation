@@ -1,0 +1,20 @@
+{
+  "benchmark_duration_seconds": 300,
+  "sample_interval_seconds": 10,
+  "total_samples": 21,
+  "metrics": {
+    "avg_cpu_percent": 0.12,
+    "avg_idle_wakeups_per_sec": 41.2,
+    "avg_power_score": 0.14,
+    "avg_context_switches_per_sec": 14.9,
+    "avg_render_callbacks_per_sec": 0.0,
+    "avg_presented_fps": 0.0,
+    "avg_metal_command_buffers_per_sec": 0.0,
+    "avg_audiocapture_callbacks_per_sec": 0.0,
+    "avg_audio_frames_per_sec": 0.0,
+    "avg_audio_processing_cpu_ms_per_sec": 0.0,
+    "mtkview_paused": true,
+    "overlay_window_hidden": true,
+    "gpu_workload": "0.0% (Negligible / Inactive)"
+  }
+}
